@@ -10,11 +10,13 @@
 @font-face {
     font-family: "Noto Sans TC";
     src: url('../fonts/NotoSans-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Noto Sans TC Bold";
     src: url('../fonts/NotoSans-Regular.ttf');
+    font-display: swap;
 }
 
 

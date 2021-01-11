@@ -11,29 +11,29 @@ section.intro div.backgroundWords {
   color: #5d5b5b;
   z-index: -1;
   font-family: "Playfair Display";
-  margin-top: 3vw;
+  margin-top: 5vw;
   /*95px*/
-  font-size: 9vw;
+  font-size: 10vw;
   /*135px*/
 }
 
 section.intro div.weIntro {
   color: #c49f54;
   font-family: "Amiri";
-  font-size: 5.2vw;
+  font-size: 3.5vw;
   /*70px*/
   font-weight: 900;
-  margin-left: 11vw;
+  margin-left: 18.5vw;
   /*150px*/
-  margin-top: 13.7vw;
+  margin-top: 18.5vw;
   /*190px*/
   letter-spacing: 1px;
 }
 
 section.intro div.contactLine {
-  margin-left: 11vw;
+  margin-left: 18.5vw;
   /*150px*/
-  margin-top: 2vw;
+  margin-top: 1vw;
   display: flex;
   align-items: center;
   margin-bottom: 5vw;
@@ -47,7 +47,7 @@ section.intro div.contactLine div.line {
 }
 
 section.intro div.contactLine i {
-  font-size: 2.3vw;
+  font-size: 3vw;
   /*30px*/
   margin: 0.75vw;
   color: #5c5c5c;
@@ -61,7 +61,7 @@ section.intro div.contactLine i:hover {
 
 section.intro div.clubIntro {
   font-family: "Noto Sans TC";
-  font-size: 2.3vw;
+  font-size: 2vw;
   width: 62.5vw;
   margin: 0 auto;
   color: #999;
@@ -74,16 +74,106 @@ section.intro div.clubIntro span.white {
   color: white;
 }
 
-section.map div{
-   width:800px;
-   height:600px;
-   margin-left: 10vw;
+@media only screen and (max-width:768px) {
+  section.intro div.backgroundWords {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #5d5b5b;
+    z-index: -1;
+    font-family: "Playfair Display";
+    margin-top: 1vw;
+    /*95px*/
+    font-size: 10vw;
+    /*135px*/
+  }
+
+  section.intro div.weIntro {
+    color: #c49f54;
+    font-family: "Amiri";
+    font-size: 6vw;
+    /*70px*/
+    font-weight: 900;
+    margin-left: 18.5vw;
+    /*150px*/
+    margin-top: 15vw;
+    /*190px*/
+    letter-spacing: 1px;
+  }
+
+  section.intro div.contactLine i {
+    font-size: 8vw;
+    /*30px*/
+    margin: 0.75vw;
+    color: #5c5c5c;
+    letter-spacing: 5px;
+  }
+
+  section.intro div.clubIntro {
+    font-family: "Noto Sans TC";
+    font-size: 5vw;
+    width: 65vw;
+    margin: 0 auto;
+    color: #999;
+    margin-top: 3vw;
+    letter-spacing: 2px;
+    line-height: 8vw;
+  }
 }
 
+/* iframe map */
+section.map-iframe div.map {
+  margin-left: 19vw;
+  margin-bottom: 5vw;
+}
+
+section.map-iframe div.map iframe {
+  max-width: 75%;
+  border: 0;
+}
+
+/* iframe RWD  */
+@media only screen and (max-width:768px) {
+  section.map-iframe div.map {
+    position: relative;
+    padding-bottom: 75%;
+    margin-left: 19vw;
+    overflow: hidden;
+  }
+
+  section.map-iframe div.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 75%;
+    border: 0;
+  }
+}
+
+/* scroll top button */
 a.button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  displasy: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 3px solid;
+  border-radius: 25px;
+  z-index: 9999;
+}
+
+/* RWD scroll top button */
+@media only screen and (max-width:768px) {
+  a.button {
+    z-index: 9999;
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 10px;
+    bottom: 5px;
     display: block;
     width: 30px;
     height: 30px;
@@ -92,14 +182,7 @@ a.button {
     text-decoration: none;
     border: 3px solid;
     border-radius: 25px;
-}
-
-section.map-iframe div.map{
-    margin-left: 400px;
-}
-
-section.map-iframe div.map iframe{
-    width: 800px;
+  }
 }
 
 @keyframes linkAnimate {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
   <meta charset="UTF-8">
@@ -8,297 +8,352 @@
 
   <title>CCNS - 成大電腦網路愛好社</title>
 
-  <link rel="stylesheet" href="./frameworks/bootstrap-5.0.0-beta1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./frameworks/font-awesome-5.15.1/css/all.css">
-  <script src="./frameworks/jquery-3.5.1/jquery-3.5.1.min.js"></script>
-  <script src="./frameworks/bootstrap-5.0.0-beta1/js/bootstrap.min.js"></script>
-  <script src="./js/float.bar.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri:700|Crimson+Text:700|Droid+Serif:400,700|Libre+Baskerville:700|Noto+Sans|Playfair+Display:900|Roboto:900|Taviraj:900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri:700|Crimson+Text:700|Droid+Serif:400,700|Libre+Baskerville:700|Noto+Sans|Playfair+Display:900|Roboto:900|Taviraj:900&display=swap" rel="stylesheet">
 
+  <script type="text/javascript" src="js/navBar.js"></script>
   <script type="text/javascript" src="js/scroll-top.js"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="top container-fluid">
-    <div class="headerLeft">
-      <a class="homeLink" href="index.html">
-        <div class="logoBox">
-          <p>CC</p>
-          <p>NS</p>
+    <div class="topNav">
+      <div class="headerLeft">
+        <a class="homeLink" href="index.html">
+          <div class="logoBox">
+            <p>CC</p>
+            <p>NS</p>
+          </div>
+        </a>
+        <a class="homeLink" href="index.html">
+          <p>
+            成大電腦網路愛好社
+          </p>
+        </a>
+      </div>
+
+      <div id="navBar" class="overlay">
+        <div class="headerRight overlay-content">
+          <a href="index.html">首頁</a>
+          <a href="intro.html">介紹</a>
+          <a href="members.html">社員</a>
+          <a href="env.html">社辦</a>
+          <a href="projects.html">專案</a>
+          <a href="events.html">定期聚</a>
+          <a href="food.html">食物</a>
         </div>
-      </a>
-      <a class="homeLink" href="index.html">
-        <p>
-          成大電腦網路愛好社
-        </p>
-      </a>
-    </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="fas fa-times fa"></i>
+        </a>
+      </div>
 
-    <div class="headerRight">
-      <a href="./intro.html">介紹</a>
-      <a href="./members.html">社員</a>
-      <a href="./env.html">社辦</a>
-      <a href="./projects.html">專案</a>
-      <a href="./events.html">定期聚</a>
-      <a href="./food.html">食物</a>
+      <div class="navIcon">
+        <i class="fas fa-bars fa" onclick="openNav()"></i>
+      </div>
     </div>
-
   </header>
-
   <section class="memberIntro">
-    <table>
-      <tr>
-        <th>
-          <img class="thumbnails-left" src="resources/members/Ian.jpg" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>Ian sung</h1>
-              <p>
-                資工系大四，競程助教，
-              </p>
-              <p>
-                目前任職於NextDrive。
-              </p>
-            </span>
-          </div>
-        </th>
-
-        <th>
-          <img class="thumbnails-right" src="resources/members/nbsword.jpg" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>nbsword</h1>
-              <p>
-                工資系大四，現任社長，
-              </p>
-              <p>
-                曾任職於Cinnamon AI。
-              </p>
-            </span>
-          </div>
-        </th>
-      </tr>
-
-      <tr>
-        <th>
-          <img class="thumbnails-left" src="resources/members/Rain.jpg" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>Rain</h1>
-              <p>
-                資工系大四，現任副社，
-              </p>
-              <p>
-                目前任職於iCHEF。
-              </p>
-            </span>
-          </div>
-        </th>
-
-        <th>
-          <img class="thumbnails-right" src="resources/members/TC.jpg" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>Tsundere Chen</h1>
-              <p>
-                資工系大三，前任社長，
-              </p>
-              <p>
-                曾任職於Pixnet、NextDrive。
-              </p>
-            </span>
-          </div>
-        </th>
-      </tr>
-
-      <tr>
-        <th>
-          <img class="thumbnails-left" src="resources/members/r2.jpg" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>r2</h1>
-              <p>
-                地科所碩二，曾任社長，
-              </p>
-              <p>
-                dreamBBS維護者。
-              </p>
-            </span>
-          </div>
-        </th>
-        <th>
-          <img class="thumbnails-right" src="resources/members/Dom2112.jpg" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>Dom2112</h1>
-              <p>
-                資工系大四，dreamBBS維護者。
-              </p>
-            </span>
-          </div>
-        </th>
-      </tr>
-
-      <tr>
-        <th>
-          <img class="thumbnails-left" src="resources/members/SJ.jpg" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>Shun Jie</h1>
-              <p>
-                機械所碩三，曾任社長，
-              </p>
-              <p>
-                他很想畢業。
-              </p>
-            </span>
-          </div>
-        </th>
-        <th>
-          <img class="thumbnails-right" src="resources/members/Raiso.jpg" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>Raiso</h1>
-              <p>
-                機械所碩一，玩具大師，競程助教，
-              </p>
-              <p>
-                Pass By Value志工團創始成員。
-              </p>
-            </span>
-          </div>
-        </th>
-      </tr>
-      <tr>
-        <th>
-          <img class="thumbnails-left" src="resources/members/DC.jpg" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>Daniel Chen</h1>
-              <p>
-                USC CS碩一，曾任副社，
-                <p>
-                  Cofounder of AInimal，現任職於Biilabs。
-                </p>
-              </p>
-            </span>
-          </div>
-        </th>
-        <th>
-          <img class="thumbnails-right" src="resources/members/sou.jpg" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>Sou</h1>
-              <p>
-                資工碩一，曾任社長，
-              </p>
-              <p>
-                競程助教。
-              </p>
-            </span>
-          </div>
-        </th>
-      </tr>
-
-      <tr>
-        <th>
-          <img class="thumbnails-left" src="resources/members/gholk.jpg" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>Gholk</h1>
-              <p>
-                交大測量研究助理，
-                <p>
-                  Emacs擁護者。
-                </p>
-              </p>
-            </span>
-          </div>
-        </th>
-        <th>
-          <img class="thumbnails-right" src="resources/members/HexRabbit.jpg" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>HexRabbit</h1>
-              <p>
-                交大資電亥客碩一，曾任社長，
-              </p>
-              <p>
-                10sec CTF成員，現任職於TeamT5。
-              </p>
-            </span>
-          </div>
-        </th>
-      </tr>
-
-      <tr>
-        <th>
-          <img class="thumbnails-left" src="resources/members/araHi.jpg" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>araHi</h1>
-              <p>
-                 資工系大一，
-                <p>
-                  他不想努力了。
-                </p>
-              </p>
-            </span>
-          </div>
-        </th>
-        <th>
-          <img class="thumbnails-right" src="resources/members/Auyu.jpg" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>Auyu0408</h1>
-              <p>
-                資工系大二，
-              </p>
-              <p>
-                她會彈鋼琴，好厲害。
-              </p>
-            </span>
-          </div>
-        </th>
-      </tr>
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/Ian.jpg" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>Ian Sung
+              <a href="https://github.com/a20034294" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工系大四，競程助教，
+            </p>
+            <p>
+              目前任職於NextDrive。
+            </p>
+          </span>
+        </div>
+      </div>
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/nbsword.jpg" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>nbsword
+              <a href="https://github.com/nbswords" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              工資系大四，aka空白，現任社長，
+            </p>
+            <p>
+              曾任職於Cinnamon AI。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
 
 
-      <tr>
-        <th>
-          <img class="thumbnails-left" src="resources/members/Kirito.jpg" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>MiohitoKiri5474</h1>
-              <p>
-                資工系大二，aka桐人，
-                <p>
-                  競程助教。
-                </p>
-              </p>
-            </span>
-          </div>
-        </th>
-        <th>
-          <img class="thumbnails-right" src="resources/members/leo.jpg" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>Leo900807</h1>
-              <p>
-                資工系大二，競程助教，
-              </p>
-              <p>
-                據說潤羽るしあ是他婆。
-              </p>
-            </span>
-          </div>
-        </th>
-      </tr>
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/Rain.jpg" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>Rain
+              <a href="https://github.com/RainrainWu" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工系大四，現任副社長，
+            </p>
+            <p>
+              目前任職於iCHEF。
+            </p>
+          </span>
+        </div>
+      </div>
 
-    </table>
-    </section>
-    <section class="to-top">
-      <a class="button" href="#" ><i class="fas fa-chevron-up"></i></a>
-    </section>
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/TC.jpg" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Tsundere Chen
+              <a href="https://github.com/TsundereChen" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工系大三，前任社長，
+            </p>
+            <p>
+              曾任職於Pixnet、NextDrive。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/r2.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>r2
+              <a href="https://github.com/holishing" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              地科所碩二，曾任社長，
+            </p>
+            <p>
+              夢之大地BBS系統維護者。
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/Dom2112.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Dom2112
+              <a href="https://github.com/IepIweidieng" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工系大四，
+            </p>
+            <p>
+              夢之大地BBS程式開發者。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/SJ.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>Shun Jie
+              <a href="https://github.com/xcv123321" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              機械所碩三，曾任社長，
+            </p>
+            <p>
+              他很想畢業。
+            </p>
+          </span>
+        </div>
+      </div>
+
+
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/Raiso.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Raiso
+              <a href="https://github.com/raiso777" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              機械所碩一，曾任副社長，
+            </p>
+            <p>
+              玩具大師，競程助教。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/DC.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>Daniel Chen
+              <a href="https://github.com/d4n1elchen" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              USC CS碩一，曾任副社長，
+            </p>
+            <p>
+              Cofounder of AInimal，現任職於Biilabs。
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/sou.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Sou
+              <a href="https://github.com/Yuessiah" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工碩一，曾任社長，
+            </p>
+            <p>
+              競程助教。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/Gholk.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>Gholk
+              <a href="https://github.com/GHolk" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              交大測量研究助理，曾任副社長，
+            </p>
+            <p>
+              Emacs擁護者。
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/HexRabbit.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>HexRabbit
+              <a href="https://github.com/HexRabbit" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              交大資電駭客碩一，曾任社長，
+            </p>
+            <p>
+              10sec CTF成員，現任職於TeamT5。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/araHi.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>arasHi
+              <a href="https://github.com/arasHi87" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工系大一，aka伊嵐，
+            </p>
+            <p>
+              他不想努力了。
+            </p>
+          </span>
+        </div>
+      </div>
+
+
+
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/Auyu.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Auyu0408
+            </h1>
+            <p>
+              資工系大二，
+            </p>
+            <p>
+              她會彈鋼琴，好厲害。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/Kirito.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>MiohitoKiri5474
+              <a href="https://github.com/miohitokiri5474" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工系大二，aka桐人，
+            </p>
+            <p>
+              競程助教。
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/leo.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Leo900807
+            </h1>
+            <p>
+              資工系大二，競程助教，
+            </p>
+            <p>
+              據說潤羽るしあ是他婆。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="to-top">
+    <a class="button" href="#"><i class="fas fa-chevron-up"></i></a>
+  </section>
 </body>
+
 </html>

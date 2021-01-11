@@ -1,15 +1,15 @@
 $('#google-form').submit(function (e) {
-     //在這裡我們要先擋掉form默認事件
+     //擋掉form默認事件
      e.preventDefault();
 
      // 確認必填欄位是否填寫
      if ($('#name').val() && $('#wish').val()) {
        $.ajax({
-         url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfioPeJTUZ9vSfptiIMq3OC19cp3SGBSVEZec_QE3tU71KSNQ/formResponse",
+         url: "https://docs.google.com/forms/d/e/1FAIpQLSc6H7dqGOF3rritMI3pAqbXyOWZoWjixcfhyBn1-3PmDo1YjQ/formResponse",
          crossDomain: true,
          data: {
-           "entry.836460018": $('#name').val(),
-           "entry.658175469": $('#wish').val()
+           "entry.985282747": $('#name').val(),
+           "entry.580958649": $('#wish').val()
          },
          type: "POST",
          dataType: "JSONP",

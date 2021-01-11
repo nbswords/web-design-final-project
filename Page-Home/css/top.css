@@ -1,9 +1,9 @@
-header.top {
+header.top div.topNav {
   padding: 0;
   display: flex;
 }
 
-header.top div.headerLeft {
+header.top div.topNav div.headerLeft {
   padding: 3.45vw;
   /*45px*/
   display: flex;
@@ -11,35 +11,30 @@ header.top div.headerLeft {
   width: 49%;
 }
 
-header.top div.headerLeft a.homeLink {
+header.top div.topNav div.headerLeft a.homeLink {
   text-decoration: none;
+  color: white;
 }
 
-header.top div.headerLeft div.logoBox {
+header.top div.topNav div.headerLeft div.logoBox {
   margin-right: 1.5vw;
-  /*20px*/
   width: 4.6vw;
-  /*60px*/
   height: 4.45vw;
-  /*60px*/
   background-color: #c49f54;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 
-header.top div.headerLeft div.logoBox p {
+header.top div.topNav div.headerLeft div.logoBox p {
   font-family: "Roboto";
   color: #161616;
-  margin-bottom: -1.5vw;
+  margin-top: 1.3vw;
   font-size: 1.35vw;
-  /*18px*/
-  line-height: 3vw;
-  /*16px*/
+  line-height: 0.4vw;
 }
 
-header.top div.headerLeft p {
+header.top div.topNav div.headerLeft p {
   font-family: "Noto Sans TC";
   font-size: 1.35vw;
   /*18px*/
@@ -48,31 +43,30 @@ header.top div.headerLeft p {
   letter-spacing: 2px;
 }
 
-header.top div.headerRight {
+header.top div.topNav div.headerRight {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 11.5vw;
-  width: 49%;
+  width: 100%;
+  margin-right: 3vw;
 }
 
-header.top div.headerRight a {
+header.top div.topNav div.headerRight a {
   text-decoration: none;
   color: white;
   font-size: 1.35vw;
-  /*18px*/
-  letter-spacing: 2px;
-  margin-left: 2.84vw;
-  /*40px*/
+  letter-spacing: 1px;
+  margin-left: 2.54vw;
 }
 
-header.top div.headerRight a:hover {
+header.top div.topNav div.headerRight a:hover {
   animation-name: linkAnimate;
   animation-duration: 0.4s;
   color: #c49f54;
 }
 
-header.top div.headerRight i {
+header.top div.topNav div.headerRight i {
   cursor: pointer;
   color: white;
   font-size: 2.13vw;
@@ -81,12 +75,138 @@ header.top div.headerRight i {
   /*45px*/
 }
 
-header.top div.headerRight i:hover {
+header.top div.topNav div.headerRight i:hover {
   animation-name: linkAnimate;
   animation-duration: 0.4s;
   color: #c49f54;
 }
 
+.overlay .closebtn {
+  display: none;
+}
+header.top div.topNav div.navIcon i {
+  display: none;
+}
+@media only screen and (max-width:768px) {
+  header.top div.topNav {
+    position: relative;
+    /* 讓navBar 最上層顯示 */
+    z-index: 9999;
+  }
+
+  header.top div.topNav #navBar {
+    display: block;
+  }
+
+  header.top div.topNav a {
+    color: white;
+    padding: 5px 5px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  header.top div.topNav div.headerLeft {
+    padding: 3vw;
+    /*45px*/
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin-top: 12px
+  }
+
+  header.top div.topNav div.headerLeft a.homeLink {
+    text-decoration: none;
+    color: white;
+  }
+
+  header.top div.topNav div.headerLeft a.homeLink p {
+    font-size: 4.5vw;
+  }
+
+  header.top div.topNav div.headerLeft div.logoBox {
+    margin-right: 2vw;
+    width: 10vw;
+    height: 8.45vw;
+    background-color: #c49f54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header.top div.topNav div.headerLeft div.logoBox p {
+    font-family: "Roboto";
+    color: #161616;
+    margin-top: 1.3vw;
+    font-size: 3.35vw;
+    line-height: 2.4vw;
+  }
+
+  /* NavBar for RWD  */
+  header.top div.topNav div.headerRight {
+    display: block;
+    align-items: center;
+    justify-content: flex-end;
+    height: 11.5vw;
+    margin-bottom: 20vw;
+    padding: 5px;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  header.top div.topNav div.headerRight a {
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    font-size: 5vw;
+    letter-spacing: 2px;
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+    margin-left: 0;
+    min-width: 180px;
+  }
+
+  header.top div.topNav div.headerRight a:hover {
+    background-color: grey;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: white;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 24px;
+    right: 26px;
+  }
+
+  header.top div.topNav div.navIcon i {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+  }
+}
 
 @keyframes linkAnimate {
   from {
